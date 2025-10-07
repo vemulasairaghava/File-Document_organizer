@@ -1,27 +1,27 @@
-supabase==2.5.1
-streamlit==1.37.1
-python-dotenv==1.0.1
 # Streamlit for UI
 streamlit==1.37.1
 
-# Supabase client and dependencies
+# Supabase client
 supabase==2.5.1
-supabase-auth==2.5.1
-supabase-functions==2.5.1
+supabase-auth==2.21.1
+supabase-functions==2.21.1
 storage3==2.21.1
-postgrest==2.21.1
-httpx==0.27.0
-cryptography==46.0.2
-cffi==2.0.0
-pyjwt==2.10.1
-pycparser==2.23
+postgrest>=0.14,<0.17
+gotrue>=2.9,<3.0
+realtime>=2.19.0,<3.0
 
-# Realtime client (compatible with supabase 2.5.1)
-realtime==2.21.0
+# HTTP client and JWT
+httpx>=0.24,<0.28
+pyjwt>=2.10.1
 
 # Environment variables
 python-dotenv==1.0.1
 
-# Optional: Type hints and utilities
-typing-extensions==4.15.0
-anyio==4.11.0
+# Cryptography dependencies
+cryptography>=36.0.0
+cffi>=1.15.0
+pycparser>=2.21
+
+# Optional utils
+typing-extensions>=4.0.0
+anyio>=4.0.0

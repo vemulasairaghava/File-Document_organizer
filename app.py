@@ -2,7 +2,10 @@ import streamlit as st
 from src.services.file_service import FileService, FileServiceError
 from datetime import datetime
 import os
+import os
+from dotenv import load_dotenv
 
+load_dotenv() 
 # Initialize service
 service = FileService()
 
